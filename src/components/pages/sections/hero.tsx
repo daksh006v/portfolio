@@ -180,7 +180,7 @@ export function Hero() {
                 {/* Centered Logo - No Animation, Auto Load */}
                 <div className="relative">
                     <Logo
-                        className="w-32 h-32 md:w-40 md:h-40 text-white drop-shadow-[0_4px_32px_rgba(255,69,0,0.6)]"
+                        className="text-[80px] md:text-[96px] leading-none filter-[drop-shadow(0_4px_32px_rgba(255,69,0,0.6))]"
                         animationTime={1.2}
                         onAnimationEnd={handleAnimationComplete}
                     />
