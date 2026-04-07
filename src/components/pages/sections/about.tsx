@@ -36,13 +36,21 @@ export function About() {
                             <div className="absolute -inset-1 rotate-3 rounded-lg border-2" />
                             <div className="absolute -inset-1 -rotate-3 rounded-lg border-2" />
                             <div className="bg-background relative rounded-lg border-2 p-2">
-                                {/* Profile placeholder with blueprint style */}
-                                <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-lg bg-card/40 border border-white/[0.06] overflow-hidden flex items-center justify-center">
-                                    <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center opacity-40">
-                                        <div className="w-12 h-12 border border-white/20 rounded-full" />
-                                    </div>
+                                {/* Profile image or placeholder with blueprint style */}
+                                <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-lg bg-card/40 border border-white/[0.06] overflow-hidden flex items-center justify-center group">
+                                    {profile.avatar ? (
+                                        <img 
+                                            src={profile.avatar} 
+                                            alt={profile.name}
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        />
+                                    ) : (
+                                        <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center opacity-40">
+                                            <div className="w-12 h-12 border border-white/20 rounded-full" />
+                                        </div>
+                                    )}
                                     {/* Status badge */}
-                                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.08] bg-background/80 backdrop-blur-sm">
+                                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/[0.08] bg-background/80 backdrop-blur-sm z-10">
                                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse border border-emerald-500/50" />
                                         <span className="text-xs uppercase tracking-widest text-muted-foreground font-mono whitespace-nowrap">Available</span>
                                     </div>

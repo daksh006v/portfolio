@@ -56,17 +56,27 @@ export function Projects() {
                                         <div className="border-foreground/20 absolute -bottom-2 -left-2 h-8 w-8 border-b-2 border-l-2 transition-all group-hover:-bottom-3 group-hover:-left-3" />
                                         <div className="border-foreground/20 absolute -right-2 -bottom-2 h-8 w-8 border-r-2 border-b-2 transition-all group-hover:-right-3 group-hover:-bottom-3" />
 
-                                        {/* Main image placeholder */}
-                                        <div className="bg-background relative overflow-hidden border-2">
+                                        {/* Main image placeholder or actual image */}
+                                        <div className="bg-background relative overflow-hidden border-2 group/img-container">
                                             <div className="relative aspect-video overflow-hidden flex items-center justify-center bg-card/40">
-                                                <div className="flex flex-col items-center gap-3 opacity-40 group-hover:opacity-60 transition-opacity duration-500">
-                                                    <div className="w-16 h-16 border border-foreground/20 rounded-full flex items-center justify-center">
-                                                        <div className="w-8 h-8 border border-foreground/20 rounded-full" />
+                                                {/* @ts-ignore - type safe enough for now */}
+                                                {project.image ? (
+                                                    <img 
+                                                        // @ts-ignore
+                                                        src={project.image} 
+                                                        alt={project.title}
+                                                        className="w-full h-full object-cover transition-transform duration-700 group-hover/img-container:scale-105"
+                                                    />
+                                                ) : (
+                                                    <div className="flex flex-col items-center gap-3 opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+                                                        <div className="w-16 h-16 border border-foreground/20 rounded-full flex items-center justify-center">
+                                                            <div className="w-8 h-8 border border-foreground/20 rounded-full" />
+                                                        </div>
+                                                        <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest">{project.title}</span>
                                                     </div>
-                                                    <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest">{project.title}</span>
-                                                </div>
+                                                )}
                                                 {/* Overlay gradient on hover */}
-                                                <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 mix-blend-multiply" />
                                             </div>
                                         </div>
                                     </div>

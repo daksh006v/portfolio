@@ -63,11 +63,19 @@ export function AboutDetails() {
                             {/* Main card */}
                             <div className="bg-background relative rounded-2xl border-2 p-6 shadow-xl">
                                 <div className="text-center">
-                                    {/* Profile image placeholder */}
-                                    <div className="border-foreground/20 bg-muted/20 mb-4 overflow-hidden rounded-lg border-2 border-dashed p-4 flex items-center justify-center">
-                                        <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center opacity-40">
-                                            <div className="w-12 h-12 border border-white/20 rounded-full" />
-                                        </div>
+                                    {/* Profile image or placeholder */}
+                                    <div className="border-foreground/20 bg-muted/20 mb-4 overflow-hidden rounded-lg border-2 border-dashed p-1 flex items-center justify-center aspect-square">
+                                        {profile.avatar ? (
+                                            <img
+                                                src={profile.avatar}
+                                                alt={profile.name}
+                                                className="w-full h-full object-cover rounded-md"
+                                            />
+                                        ) : (
+                                            <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center opacity-40 m-auto py-12">
+                                                <div className="w-12 h-12 border border-white/20 rounded-full" />
+                                            </div>
+                                        )}
                                     </div>
                                     <h3 className="font-incognito text-2xl font-semibold">
                                         {profile.name}
