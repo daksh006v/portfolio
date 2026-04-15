@@ -12,7 +12,11 @@ const NAV_LINKS = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
-    { id: "stats", label: "Stats" },
+    { id: "skills", label: "Skills" },
+    { id: "hackathons", label: "Hackathons" },
+    { id: "certifications", label: "Certifications" },
+    { id: "github", label: "GitHub" },
+    { id: "leetcode", label: "LeetCode" },
     { id: "contact", label: "Contact" },
 ] as const;
 

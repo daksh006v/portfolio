@@ -22,7 +22,7 @@ const tagColors: Record<string, string> = {
 export function Projects() {
     const projects = profile.projects.slice(0, 3).map((p) => ({
         ...p,
-        date: "2024",
+        date: "2026",
         status: "completed",
         github: profile.contact.github,
     }));

@@ -2,17 +2,17 @@ export const profile = {
     name: "Daksh Bajaniya",
     displayName: "Daksh",
     role: "Full Stack Developer",
-    tagline: "Doing little is essential to doing everything else! ✨ \ud83e\udd84",
+    tagline: "Doing little is essential to doing everything else! \u2728 \uD83E\uDD84",
     location: "Ahmedabad, Gujarat",
     avatar: "https://github.com/daksh006v.png",
 
     intro: [
-        "Hey, I'm Daksh \u2014 a creative developer who blends logic with art.",
+        "Hey, I\u2019m Daksh \u2014 a creative developer who blends logic with art.",
         "I enjoy turning complex ideas into simple, usable systems.",
         "I like crafting things that feel natural, soulful, and intentional."
     ],
 
-    about: "I'm a full stack developer focused on building clean, scalable products. I love turning ideas into smooth, aesthetic and production-ready products. I value authenticity, personality and emotion over hype. Always learning and building things.",
+    about: "I\u2019m a full stack developer focused on building clean, scalable products. I love turning ideas into smooth, aesthetic and production-ready products. I value authenticity, personality and emotion over hype. Always learning and building things.",
 
     personality: [
         "Creative and artistic mindset",
@@ -22,12 +22,107 @@ export const profile = {
         "Hates fake or forced design"
     ],
 
-    skills: {
-        frontend: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "TailwindCSS"],
-        backend: ["Node.js", "Express", "REST APIs", "MongoDB", "Linux"],
-        tools: ["Git", "GitHub", "VS Code", "Vercel", "Figma"],
-        learning: ["C++", "Three.js"]
-    },
+    skills: [
+        {
+            category: "Frontend",
+            items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "TailwindCSS"]
+        },
+        {
+            category: "Backend",
+            items: ["Node.js", "Express", "REST APIs", "MongoDB", "Linux"]
+        },
+        {
+            category: "Tools & Platforms",
+            items: ["Git", "GitHub", "VS Code", "Vercel", "Figma", "Postman"]
+        },
+        {
+            category: "Currently Learning",
+            items: ["C++", "Three.js", "TypeScript Advanced"]
+        }
+    ],
+
+    hackathons: [
+        {
+            name: "Odoo x Gujarati vidhyapith",
+            organizer: "Odoo & Gujarati Vidhyapith",
+            date: "2026",
+            position: "Participant",
+            description: "An innovation-driven hackathon focused on solving real-world challenges through collaborative development.",
+            project: {
+                title: "FleetEdge",
+                description: "Enterprise-Grade Fleet Intelligence & Mission Command.",
+                tech: ["Next.js", "Node.js", "JavaScript", "CSS"],
+                links: {
+                    github: "https://github.com/daksh006v",
+                    live: "https://github.com/daksh006v"
+                }
+            }
+        },
+        {
+            name: "Dev Heat Hackathon of Spring Fiesta",
+            organizer: "IIIT Surat",
+            date: "2026",
+            position: "Participant",
+            description: "A high-stakes technical competition focused on innovative engineering solutions.",
+            certificateUrl: "https://drive.google.com/file/d/1GUy34KfiytvjVcWNrZcpDoykVoHr9E_2/view?usp=sharing",
+            project: {
+                title: "StudyFlow AI",
+                description: "An AI-powered study companion that transforms your course materials into interactive, personalized study plans — instantly.",
+                tech: ["React", "Vite", "Gemini AI", "Tailwind CSS", "Three.js"],
+                links: {
+                    github: "https://github.com/daksh006v",
+                    live: "https://github.com/daksh006v"
+                }
+            }
+        },
+        {
+            name: "TrustAI Ideathon 2026",
+            organizer: "IIIT Pune",
+            date: "2026",
+            position: "Participant",
+            description: "Ideathon focusing on Safe and Trusted AI, encouraging robust, ethical and secure AI solutions.",
+            certificateUrl: "https://drive.google.com/file/d/1z8LvkMMVBTZmiRNxa-ctTgtwbtcPa2Yi/view?usp=sharing",
+        }
+    ],
+
+    certificates: [
+        {
+            title: "Responsive Web Design",
+            issuer: "freeCodeCamp",
+            date: "2026",
+            credentialUrl: "https://www.freecodecamp.org/certification/daksh006v/responsive-web-design"
+        },
+        {
+            title: "JavaScript Algorithms & Data Structures",
+            issuer: "freeCodeCamp",
+            date: "2026",
+            credentialUrl: "https://www.freecodecamp.org/"
+        },
+        {
+            title: "React Developer",
+            issuer: "Meta (Coursera)",
+            date: "2026",
+            credentialUrl: "https://www.coursera.org/"
+        },
+        {
+            title: "MongoDB Node.js Developer",
+            issuer: "MongoDB University",
+            date: "2026",
+            credentialUrl: "https://university.mongodb.com/"
+        },
+        {
+            title: "Introduction to Git & GitHub",
+            issuer: "Google (Coursera)",
+            date: "2026",
+            credentialUrl: "https://www.coursera.org/"
+        },
+        {
+            title: "Foundations of UX Design",
+            issuer: "Google (Coursera)",
+            date: "2026",
+            credentialUrl: "https://www.coursera.org/"
+        }
+    ],
 
     projects: [
         {
@@ -67,8 +162,8 @@ export const profile = {
         email: "daksh006v@gmail.com",
         github: "https://github.com/daksh006v",
         linkedin: "https://www.linkedin.com/in/daksh-bajaniya-26b523378/",
-        resume: "",
+        resume: "https://drive.google.com/file/d/1kz9MQUrhz7XqCEs8UGnjf1SOZPaJHmMY/view?usp=sharing",
         youtube: "https://www.youtube.com/@DakshBajaniya006",
-        leetcode: "https://leetcode.com/u/daksh006v/" 
+        leetcode: "https://leetcode.com/u/V1Cl3w57IK/"
     }
 }
