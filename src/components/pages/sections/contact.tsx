@@ -12,6 +12,7 @@ export function Contact() {
     const [message, setMessage] = useState("");
     const [step, setStep] = useState<number>(0); // 0: email, 1: name, 2: message
     const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+    const [errorMessage, setErrorMessage] = useState<string>("");
 
     const canSend = email.trim().length > 3 && message.trim().length > 4;
 
@@ -33,8 +34,9 @@ export function Contact() {
                 "gpI-G78_dO24HRWhp" // Your provided public key
             );
             setStatus("sent");
-        } catch (error) {
+        } catch (error: any) {
             console.error("EmailJS Error:", error);
+            setErrorMessage(error?.text || error?.message || "Unknown error occurred");
             setStatus("error");
         }
     };
@@ -44,6 +46,7 @@ export function Contact() {
         setEmail("");
         setName("");
         setMessage("");
+        setErrorMessage("");
         setStatus("idle");
     };
 
@@ -171,7 +174,7 @@ export function Contact() {
                                 <div className="font-mono text-emerald-400/90">✓ Message redirected.</div>
                             )}
                             {status === "error" && (
-                                <div className="font-mono text-red-400/90">⚠ Something went wrong. Please try again.</div>
+                                <div className="font-mono text-red-400/90">⚠ Error: {errorMessage}</div>
                             )}
 
                             {/* Prompt guide for progress */}

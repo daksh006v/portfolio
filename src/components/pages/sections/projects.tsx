@@ -23,7 +23,7 @@ import { useState } from "react";
 
 export function Projects() {
     const [activeTab, setActiveTab] = useState("All");
-    const categories = ["All", "Full Stack", "Frontend", "Clones", "Games"];
+    const categories = ["All", "Full Stack", "Frontend", "Clones"];
 
     const projects = profile.projects
         .filter((p) => activeTab === "All" || p.category === activeTab)

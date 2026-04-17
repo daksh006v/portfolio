@@ -153,20 +153,52 @@ export const profile = {
             category: "Frontend"
         },
         {
-            title: "UI Clone Projects",
-            description: "UI Clone projects with NextJS, React, Tailwind CSS and much more",
+            title: "Airbnb Clone",
+            description: "A pixel-perfect UI clone of Airbnb's web interface showcasing modern layout constraints.",
             tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://github.com/daksh006v",
-            github: "https://github.com/daksh006v",
+            live: "https://bright-salamander-ca9508.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
             category: "Clones"
         },
         {
-            title: "React Tic-Tac-Toe",
-            description: "A classic strategy game to demonstrate state management in React.",
-            tech: ["React", "CSS", "JavaScript"],
-            live: "https://github.com/daksh006v",
-            github: "https://github.com/daksh006v",
-            category: "Games"
+            title: "Forme Clone",
+            description: "Landing page UI clone referencing the gorgeous Forme design.",
+            tech: ["Next.js", "React", "TailwindCSS"],
+            live: "https://forme123.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
+            category: "Clones"
+        },
+        {
+            title: "Pepsi Clone",
+            description: "Creative landing page clone of Pepsi's product showcase.",
+            tech: ["Next.js", "React", "TailwindCSS"],
+            live: "https://pepsiclone123.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
+            category: "Clones"
+        },
+        {
+            title: "LoftOrbital Clone",
+            description: "Space-tech company landing page clone demonstrating dark mode aesthetics.",
+            tech: ["Next.js", "React", "TailwindCSS"],
+            live: "https://loftorbital123.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
+            category: "Clones"
+        },
+        {
+            title: "XRP Ledger Clone",
+            description: "Crypto and blockchain based landing page clone focusing on typography and spacing.",
+            tech: ["Next.js", "React", "TailwindCSS"],
+            live: "https://xrpledger123.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
+            category: "Clones"
+        },
+        {
+            title: "dYdX Clone",
+            description: "Decentralized exchange landing page recreation.",
+            tech: ["Next.js", "React", "TailwindCSS"],
+            live: "https://dydx123.netlify.app/",
+            github: "https://github.com/daksh006v/sixWebSites",
+            category: "Clones"
         }
     ],
 
