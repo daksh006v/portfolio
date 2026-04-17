@@ -173,34 +173,16 @@ export function Projects() {
                                         <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                                     </a>
 
-                                    {/* @ts-ignore */}
-                                    {project.subLinks ? (
-                                        // @ts-ignore
-                                        project.subLinks.map((link) => (
-                                            <a
-                                                key={link.name}
-                                                href={link.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="group/btn inline-flex items-center gap-2 border-2 font-medium px-4 py-2 rounded-lg hover:bg-foreground/5 transition-all duration-200 text-sm border-foreground/20"
-                                            >
-                                                <ExternalLink className="h-4 w-4" />
-                                                {link.name}
-                                                <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                                            </a>
-                                        ))
-                                    ) : (
-                                        <a
-                                            href={project.live}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="group/btn inline-flex items-center gap-2 border-2 font-medium px-5 py-2 rounded-lg hover:bg-foreground/5 transition-all duration-200 text-sm"
-                                        >
-                                            <ExternalLink className="h-4 w-4" />
-                                            Live Demo
-                                            <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                                        </a>
-                                    )}
+                                    <a
+                                        href={project.live}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group/btn inline-flex items-center gap-2 border-2 font-medium px-5 py-2 rounded-lg hover:bg-foreground/5 transition-all duration-200 text-sm"
+                                    >
+                                        <ExternalLink className="h-4 w-4" />
+                                        {project.title === "WebClones Collection" ? "View Collection Hub" : "Live Demo"}
+                                        <ArrowUpRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                                    </a>
                                 </div>
 
                                 {/* Slanted decorative lines */}

@@ -153,21 +153,13 @@ export const profile = {
             category: "Frontend"
         },
         {
-            title: "UI Clone Projects",
-            description: "A collection of 6 pixel-perfect UI clones including Airbnb, Forme, Pepsi, LoftOrbital, XRP Ledger, and dYdX built with React and TailwindCSS.",
-            tech: ["Next.js", "React", "TailwindCSS"],
+            title: "WebClones Collection",
+            description: "A curated collection of 6 pixel-perfect UI replicas including Airbnb, Forme, Pepsi and more, mapped onto a robust landing hub.",
+            tech: ["HTML5", "CSS3", "JavaScript"],
             live: "https://website-frontend-clones.netlify.app/",
             github: "https://github.com/daksh006v/sixWebSites",
             category: "Clones",
-            subLinks: [
-                { name: "Airbnb", url: "https://bright-salamander-ca9508.netlify.app/" },
-                { name: "Forme", url: "https://forme123.netlify.app/" },
-                { name: "Pepsi", url: "https://pepsiclone123.netlify.app/" },
-                { name: "LoftOrbital", url: "https://loftorbital123.netlify.app/" },
-                { name: "XRP Ledger", url: "https://xrpledger123.netlify.app/" },
-                { name: "dYdX", url: "https://dydx123.netlify.app/" },
-                { name: "Landing Hub", url: "https://website-frontend-clones.netlify.app/" }
-            ]
+            image: "/projects/webclones.png"
         }
     ],
 
