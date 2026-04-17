@@ -23,9 +23,9 @@ const SectionHeading = ({
             id={id}
             className={cn("relative w-full border-b", className)}
         >
-            <div className="bg-background absolute top-0 left-0 z-20 rounded-br-md border-r border-b px-4 py-2 font-mono text-xs tracking-wider uppercase">
+            <h2 className="bg-background absolute top-0 left-0 z-20 rounded-br-md border-r border-b px-4 py-2 font-mono text-xs tracking-wider uppercase">
                 <HyperText text={text} />
-            </div>
+            </h2>
 
             {children}
         </motion.section>

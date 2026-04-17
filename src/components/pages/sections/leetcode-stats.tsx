@@ -85,8 +85,8 @@ export function LeetcodeStats() {
                             <a href={profile.contact.leetcode} target="_blank" rel="noopener noreferrer" className="block max-w-full">
                                 <img 
                                     src={`https://leetcard.jacoblin.cool/${username}?theme=dark&font=Inter&ext=heatmap`} 
-                                    alt="LeetCode Stats" 
-                                    className="max-w-full rounded-lg shadow-xl"
+                                    alt="Daksh Bajaniya LeetCode Profile Stats and Problem Solving Metrics" 
+                                    className="w-full h-auto object-contain rounded-lg border bg-card"
                                     loading="lazy"
                                 />
                             </a>

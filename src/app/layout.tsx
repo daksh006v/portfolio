@@ -39,8 +39,46 @@ const incognito = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Full Stack Developer",
-  description: "Full Stack Developer & Designer portfolio showcasing projects and skills",
+  title: "Daksh Bajaniya | Full Stack React & Node.js Developer Portfolio",
+  description:
+    "Portfolio of Daksh Bajaniya, a passionate Full Stack Developer specializing in React, Next.js, Node.js. Explore my real-world projects, hackathon wins, and technical achievements.",
+  keywords: [
+    "Daksh Bajaniya",
+    "Daksh",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js",
+    "Portfolio",
+    "Web Development",
+    "Frontend Developer",
+    "Node.js Developer",
+  ],
+  authors: [{ name: "Daksh Bajaniya", url: "https://github.com/Daksh006v" }],
+  openGraph: {
+    title: "Daksh Bajaniya | Full Stack React & Node.js Developer Portfolio",
+    description:
+      "Explore the portfolio of Daksh Bajaniya, showcasing real-world React projects, hackathon wins, and web development achievements.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Daksh Bajaniya Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daksh Bajaniya | Full Stack Developer",
+    description:
+      "Portfolio of Daksh Bajaniya, showcasing full-stack applications, problem-solving skills, and web development achievements.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

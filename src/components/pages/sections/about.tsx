@@ -41,7 +41,7 @@ export function About() {
                                     {profile.avatar ? (
                                         <img 
                                             src={profile.avatar} 
-                                            alt={profile.name}
+                                            alt="Daksh Bajaniya - Full Stack Developer Profile Photo"
                                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                         />
                                     ) : (
@@ -91,8 +91,9 @@ export function About() {
                         >
                             <span className="text-foreground">Hey, I&apos;m </span>
                             <span className="relative text-[#8cc2ff] italic">
-                                Daksh
+                                Daksh Bajaniya
                             </span>
+                            <span className="sr-only"> - Full Stack React and Node.js Developer</span>
                         </motion.h1>
 
                         {/* Typewriter role */}

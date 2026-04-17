@@ -105,8 +105,8 @@ export function GithubActivity() {
                             {/* We use rshah's ghchart. Replace 'daksh006v' with username. Using 3b82f6 for a nice blue theme to match screenshot */}
                             <img
                                 src={`https://ghchart.rshah.org/3b82f6/${profile.contact.github.split("/").pop()}`}
-                                alt="GitHub Contribution Graph"
-                                className="w-full max-w-full mix-blend-screen"
+                                alt="Daksh Bajaniya GitHub Contributions and Coding Activity Graph"
+                                className="w-full h-auto opacity-70 contrast-150 grayscale invert max-md:hidden"
                                 loading="lazy"
                             />
                         </div>

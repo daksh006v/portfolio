@@ -68,7 +68,8 @@ export function AboutDetails() {
                                         {profile.avatar ? (
                                             <img
                                                 src={profile.avatar}
-                                                alt={profile.name}
+                                                alt="Daksh Bajaniya - Full Stack Web Developer Desktop Setup"
+                                                loading="lazy"
                                                 className="w-full h-full object-cover rounded-md"
                                             />
                                         ) : (
