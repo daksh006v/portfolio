@@ -153,52 +153,21 @@ export const profile = {
             category: "Frontend"
         },
         {
-            title: "Airbnb Clone",
-            description: "A pixel-perfect UI clone of Airbnb's web interface showcasing modern layout constraints.",
+            title: "UI Clone Projects",
+            description: "A collection of 6 pixel-perfect UI clones including Airbnb, Forme, Pepsi, LoftOrbital, XRP Ledger, and dYdX built with React and TailwindCSS.",
             tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://bright-salamander-ca9508.netlify.app/",
+            live: "https://website-frontend-clones.netlify.app/",
             github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
-        },
-        {
-            title: "Forme Clone",
-            description: "Landing page UI clone referencing the gorgeous Forme design.",
-            tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://forme123.netlify.app/",
-            github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
-        },
-        {
-            title: "Pepsi Clone",
-            description: "Creative landing page clone of Pepsi's product showcase.",
-            tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://pepsiclone123.netlify.app/",
-            github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
-        },
-        {
-            title: "LoftOrbital Clone",
-            description: "Space-tech company landing page clone demonstrating dark mode aesthetics.",
-            tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://loftorbital123.netlify.app/",
-            github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
-        },
-        {
-            title: "XRP Ledger Clone",
-            description: "Crypto and blockchain based landing page clone focusing on typography and spacing.",
-            tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://xrpledger123.netlify.app/",
-            github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
-        },
-        {
-            title: "dYdX Clone",
-            description: "Decentralized exchange landing page recreation.",
-            tech: ["Next.js", "React", "TailwindCSS"],
-            live: "https://dydx123.netlify.app/",
-            github: "https://github.com/daksh006v/sixWebSites",
-            category: "Clones"
+            category: "Clones",
+            subLinks: [
+                { name: "Airbnb", url: "https://bright-salamander-ca9508.netlify.app/" },
+                { name: "Forme", url: "https://forme123.netlify.app/" },
+                { name: "Pepsi", url: "https://pepsiclone123.netlify.app/" },
+                { name: "LoftOrbital", url: "https://loftorbital123.netlify.app/" },
+                { name: "XRP Ledger", url: "https://xrpledger123.netlify.app/" },
+                { name: "dYdX", url: "https://dydx123.netlify.app/" },
+                { name: "Landing Hub", url: "https://website-frontend-clones.netlify.app/" }
+            ]
         }
     ],
 
