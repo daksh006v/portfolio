@@ -147,7 +147,7 @@ export function About() {
                                 className="group/btn inline-flex items-center gap-2 border-2 font-medium px-6 py-2.5 rounded-lg hover:bg-foreground/5 transition-all duration-200 text-sm"
                             >
                                 <Download className="size-4 transition-transform group-hover/btn:translate-y-0.5" />
-                                Download resume
+                                View resume
                             </a>
                         </motion.div>
                     </div>

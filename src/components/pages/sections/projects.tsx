@@ -19,17 +19,42 @@ const tagColors: Record<string, string> = {
     Vite: "bg-purple-500/10 text-purple-500 border-purple-500/30",
 };
 
+import { useState } from "react";
+
 export function Projects() {
-    const projects = profile.projects.slice(0, 3).map((p) => ({
-        ...p,
-        date: "2026",
-        status: "completed",
-        github: profile.contact.github,
-    }));
+    const [activeTab, setActiveTab] = useState("All");
+    const categories = ["All", "Full Stack", "Frontend", "Clones", "Games"];
+
+    const projects = profile.projects
+        .filter((p) => activeTab === "All" || p.category === activeTab)
+        .map((p) => ({
+            ...p,
+            date: "2026",
+            status: "completed",
+            github: p.github || profile.contact.github,
+        }));
 
     return (
         <SectionHeading id="projects" text="Projects">
-            <div className="divide-y">
+            {/* Tabs Filtering */}
+            <div className="flex flex-wrap items-center justify-center gap-2 py-8 bg-muted/20 border-b">
+                {categories.map((tab) => (
+                    <button
+                        key={tab}
+                        onClick={() => setActiveTab(tab)}
+                        className={cn(
+                            "px-5 py-2 text-sm font-mono rounded-full border transition-all duration-300",
+                            activeTab === tab
+                                ? "bg-foreground text-background border-foreground font-semibold shadow-md"
+                                : "hover:bg-foreground/10 text-foreground/70 border-foreground/20"
+                        )}
+                    >
+                        {tab}
+                    </button>
+                ))}
+            </div>
+
+            <div className="divide-y relative min-h-[400px]">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.title}

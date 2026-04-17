@@ -176,11 +176,36 @@ export function Hero() {
 
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center text-center gap-8 px-4">
+            <div className="relative z-10 flex flex-col items-center text-center gap-6 px-4 pt-12">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    className="relative w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-white/20 overflow-hidden mt-4 shadow-[0_0_15px_rgba(255,69,0,0.5)]"
+                >
+                    <img 
+                        src={profile.avatar} 
+                        alt={profile.name}
+                        className="w-full h-full object-cover"
+                    />
+                </motion.div>
+                
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    className="flex flex-col items-center gap-1"
+                >
+                     <h1 className="text-3xl md:text-5xl font-bold font-incognito text-white tracking-widest drop-shadow-md">
+                        {profile.name}
+                     </h1>
+                     <p className="text-white/70 text-sm md:text-lg tracking-widest uppercase font-mono mt-2">{profile.role}</p>
+                </motion.div>
+
                 {/* Centered Logo - No Animation, Auto Load */}
-                <div className="relative">
+                <div className="relative mt-4">
                     <Logo
-                        className="text-[80px] md:text-[96px] leading-none filter-[drop-shadow(0_4px_32px_rgba(255,69,0,0.6))]"
+                        className="text-[60px] md:text-[80px] leading-none filter-[drop-shadow(0_0_32px_rgba(255,69,0,0.6))]"
                         animationTime={1.2}
                         onAnimationEnd={handleAnimationComplete}
                     />

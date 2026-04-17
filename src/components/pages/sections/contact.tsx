@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { profile } from "@/data/profile";
 import { Send, X } from "lucide-react";
 import SectionHeading from "@/components/section-heading";
@@ -19,11 +20,21 @@ export function Contact() {
         if (!canSend) return;
         try {
             setStatus("sending");
-            window.location.href = `mailto:${profile.contact.email}?subject=Portfolio%20Contact%20from%20${encodeURIComponent(
-                name || "Anonymous",
-            )}&body=${encodeURIComponent(message)}%0A%0Afrom:%20${encodeURIComponent(email)}`;
+            // NOTE: You will need to replace the placeholders with your actual Service ID and Template ID.
+            await emailjs.send(
+                "service_9k90qti", // Replace with your Service ID
+                "template_df5u4gk", // Replace with your Template ID
+                {
+                    from_name: name || "Anonymous",
+                    from_email: email,
+                    message: message,
+                    to_name: profile.name,
+                },
+                "gpI-G78_dO24HRWhp" // Your provided public key
+            );
             setStatus("sent");
-        } catch {
+        } catch (error) {
+            console.error("EmailJS Error:", error);
             setStatus("error");
         }
     };

@@ -131,7 +131,8 @@ export const profile = {
             tech: ["Node.js", "Express", "TailwindCSS", "MongoDB"],
             live: "https://draft16.vercel.app/",
             github: "https://github.com/daksh006v/Draft16",
-            image: "/projects/draft16.png"
+            image: "/projects/draft16.png",
+            category: "Full Stack"
         },
         {
             title: "PinScope",
@@ -139,7 +140,8 @@ export const profile = {
             tech: ["Next.js", "React", "TailwindCSS", "MongoDB"],
             live: "https://fullstack-project-ten-lovat.vercel.app/",
             github: "https://github.com/daksh006v/PinScope",
-            image: "/projects/pinscope.png"
+            image: "/projects/pinscope.png",
+            category: "Full Stack"
         },
         {
             title: "StudyFlow",
@@ -147,14 +149,24 @@ export const profile = {
             tech: ["React", "TailwindCSS"],
             live: "https://github.com/daksh006v",
             github: "https://github.com/daksh006v",
-            image: "/projects/studyflow.png"
+            image: "/projects/studyflow.png",
+            category: "Frontend"
         },
         {
             title: "UI Clone Projects",
             description: "UI Clone projects with NextJS, React, Tailwind CSS and much more",
             tech: ["Next.js", "React", "TailwindCSS"],
             live: "https://github.com/daksh006v",
-            github: "https://github.com/daksh006v"
+            github: "https://github.com/daksh006v",
+            category: "Clones"
+        },
+        {
+            title: "React Tic-Tac-Toe",
+            description: "A classic strategy game to demonstrate state management in React.",
+            tech: ["React", "CSS", "JavaScript"],
+            live: "https://github.com/daksh006v",
+            github: "https://github.com/daksh006v",
+            category: "Games"
         }
     ],
 
@@ -164,6 +176,7 @@ export const profile = {
         linkedin: "https://www.linkedin.com/in/daksh-bajaniya-26b523378/",
         resume: "https://drive.google.com/file/d/1kz9MQUrhz7XqCEs8UGnjf1SOZPaJHmMY/view?usp=sharing",
         youtube: "https://www.youtube.com/@DakshBajaniya006",
-        leetcode: "https://leetcode.com/u/V1Cl3w57IK/"
+        leetcode: "https://leetcode.com/u/V1Cl3w57IK/",
+        twitter: "https://x.com/daksh006v"
     }
 }
